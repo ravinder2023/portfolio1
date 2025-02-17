@@ -39,20 +39,19 @@ def aboutMe():
         </style>
         <div class="justify-text">
         
-        I am a dedicated Data Scientist with over 4 years of professional experience in the dynamic fields of 
-        machine learning and artificial intelligence. I have a proven track record in developing innovative ML models, 
-        conducting in-depth data analysis, and implementing data-driven solutions that significantly impact business outcomes.
-        
-        I have successfully led projects across various stages of the data lifecycle, from data collection and cleaning to 
-        feature engineering, modeling, and validation. I hold a Master's in Electronics (Signal Processing) and a 
-        Bachelor's in Electronics and Communication 
-        Engineering. I am passionate about continuous learning and advancing in the AI field.
-        </div>
+        I am an enthusiastic and dedicated Computer Science Engineering student with a strong passion for web development, machine learning, and AI technologies. I have built a solid foundation in front-end and back-end development and have worked with technologies like HTML, CSS, JavaScript, and frameworks such as Flask, React, and Angular.
+
+        Throughout my academic journey, I have developed a keen interest in applying AI to solve real-world problems. Some of the projects I’m currently working on include milk quality prediction using machine learning, text-to-image conversion, and an AI-powered legal documentation solution.
+
+        I am always eager to learn new technologies and continuously seek opportunities to apply my skills in meaningful ways. I have actively participated in hackathons, internships, and held leadership roles, including my contributions to the Data Science Club and NCC Air Wing.
+
+        With a passion for innovation and problem-solving, I am committed to making a significant impact in the tech industry. My ultimate goal is to become a skilled web developer while exploring emerging fields like AI, data science,
+                </div>
         """, unsafe_allow_html=True)
         c1,c2, c3 =st.columns(3)
-        c1.markdown("""**[GitHub](https://github.com/archanags001)**""")
-        c2.markdown("""**[LinkedIn](https://www.linkedin.com/in/archanags001)** """)
-        c3.markdown("""**[Upwork](https://www.upwork.com/freelancers/~010f3758a004ea64dd?viewMod%20e)**""")
+        c1.markdown("""**[GitHub](https://github.com/ravinder2023))**""")
+        c2.markdown("""**[LinkedIn](https://www.linkedin.com/in/ravinder-kaur-658565270/)** """)
+        c3.markdown("""**[Huggingface](https://huggingface.co/ravinder2024)**""")
 
 
     path = "Animation_blue_robo.json"
@@ -108,7 +107,7 @@ with st.sidebar:
     # Option menu in sidebar
     pages = ["About me", "Resume", "Experience",  "Projects", "Contact"]
     nav_tab_op = option_menu(
-        menu_title="Archana",
+        menu_title="Ravinder",
         options=pages,
         icons=['person-fill', 'file-text', 'briefcase', 'folder', 'star', 'envelope'],
         menu_icon="cast",
