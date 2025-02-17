@@ -6,14 +6,14 @@ import requests
 import json
 from reume_page import resume
 from experience_page import experience
-from upwork_page import feedbackRating
+#from upwork_page import feedbackRating
 from project_page import projects
 from contact_form import contact
 
  # Page setup
 st.set_page_config(
-    page_title="archana",
-    page_icon="📋",
+    page_title="ravinder's portfolio",
+    page_icon=".",
     layout="wide",
 )
 
@@ -25,11 +25,11 @@ def gradient(color1, color2, color3, content1, content2):
                 unsafe_allow_html=True)
 def aboutMe():
     col1, col2 = st.columns(2)
-    full_name = "Archana"
+    full_name = "Ravinder kaur"
     info = {'Intro': "Data scientist"}
 
     with col1:
-        st.markdown("<h2 style='text-align: center; '>Hello! I'm Archana 👋</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center; '>Hello! I'm Ravinder kaur 👋</h2>", unsafe_allow_html=True)
 
         st.markdown("""
         <style>
@@ -78,7 +78,7 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # Get the base64 string of the image
-logo_base64 = get_base64_image("Image.jpeg")
+logo_base64 = get_base64_image("RAAVI.jpeg")
 
 # Logo styling
 logo_html = f"""
@@ -106,7 +106,7 @@ with st.sidebar:
     # Other sidebar elements
     # st.sidebar.image("logo_image.png", width=200, use_column_width=True)
     # Option menu in sidebar
-    pages = ["About me", "Resume", "Experience",  "Projects", "Testimonials", "Contact"]
+    pages = ["About me", "Resume", "Experience",  "Projects", "Contact"]
     nav_tab_op = option_menu(
         menu_title="Archana",
         options=pages,
@@ -122,8 +122,8 @@ elif nav_tab_op == "Resume":
     resume()
 elif nav_tab_op == "Experience":
     experience()
-elif nav_tab_op == "Testimonials":
-    feedbackRating()
+# elif nav_tab_op == "Testimonials":
+#     feedbackRating()
 elif nav_tab_op == "Projects":
     projects()
 elif nav_tab_op == "Contact":
